@@ -6,6 +6,12 @@
 
 void thief(){
     //code here
+    int b = MUN, *c;
+
+    for(c = &b; *c != NUM; c++){
+        printf("c points to %ld storing %d\n", (long)c, *c);
+    }
+    *c = b;
 }
 //Make the print prints MUN instead of NUM
 
